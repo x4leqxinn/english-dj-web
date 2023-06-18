@@ -1,0 +1,675 @@
+body {
+    background: linear-gradient(rgb(71, 71, 74), rgb(126, 123, 142));
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+#menu_navegador {
+    background-image: url("../images/fondo5.jpg");
+}
+
+#letras {
+    color: #dcdc06;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #0a0a0a62;
+}
+
+.seleccion:focus,
+.seleccion:hover {
+    background-color: #0a0a0a62;
+}
+
+.seleccionClaro:focus,
+.seleccionClaro:hover {
+    background-color: #1762f74a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el encabezado */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Estilos para la sección "Acerca de nosotros" */
+#about-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.team-section,
+.customer-satisfaction-section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.content-wrap {
+    min-height: calc(100% - 60px);
+    /* Altura mínima del contenido, ajusta el valor 60px según el tamaño de tu header */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el apartado de crear cuenta */
+.container2 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1s forwards;
+    /* Aplicamos la animación de entrada */
+
+}
+
+.container3 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #007bff;
+}
+
+#imagenReparacion {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    /* Inicialmente, la imagen está oculta fuera de la tarjeta */
+    transition: top 1s ease;
+    /* Transición suave durante 1 segundo */
+}
+
+#imagenMantenimiento {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    /* Inicialmente, la imagen está oculta fuera de la tarjeta */
+    transition: top 1.25s ease;
+    /* Transición suave durante 1 segundo */
+}
+
+#imagenAsistencia {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    /* Inicialmente, la imagen está oculta fuera de la tarjeta */
+    transition: top 1.5s ease;
+    /* Transición suave durante 1 segundo */
+}
+
+.tarjeta {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenRedonda {
+    border-radius: 15px;
+}
+
+#tituloColorBlanco {
+    color: #ffffff;
+    margin-top: 2%;
+}
+
+#subtituloPlateadoClaro {
+    color: #B6B6B6;
+}
+
+#subtituloPlateadoClaroInvitacionACrear {
+    color: #B6B6B6;
+    font-size: 150%;
+}
+
+#imgExperiencia {
+    width: 100%;
+    height: 90%;
+
+}
+
+#imgSatisfaccion {
+    width: 100%;
+    height: 70%;
+
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-animation {
+    animation: slide-up 0.5s ease-in-out;
+}
+
+.separacion-cards {
+    margin-bottom: 20px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#carouselExampleIndicators {
+    max-width: 600px;
+    /* Ajusta el ancho máximo del carrusel según tus preferencias */
+    margin: 0 auto;
+    /* Centra horizontalmente el carrusel */
+}
+
+#carouselExampleIndicators .carousel-item img {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+    height: auto;
+    /* Ajusta la altura de las imágenes automáticamente */
+    border-radius: 2%;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 700px) {
+    #carouselExampleIndicators {
+        max-width: 100%;
+        /* Ajusta el ancho máximo del carrusel al 100% en pantallas más pequeñas */
+
+    }
+}
+
+#ubicadosEn {
+    margin-top: 2%;
+}
+
+/* Css dedicado al mapa que muestra la ubicacion geografica*/
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "team-section"
+        "customer-satisfaction-section"
+        "map";
+    gap: 20px;
+}
+
+.map-container>* {
+    width: 100%;
+}
+
+.text-center {
+    grid-area: title;
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1s forwards;
+    /* Aplicamos la animación de entrada */
+    text-align: center;
+}
+
+.text-center2 {
+    grid-area: title;
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+    text-align: center;
+}
+
+#horarioDeAtencion {
+    grid-area: title;
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1s forwards;
+    /* Aplicamos la animación de entrada */
+    text-align: center;
+}
+
+#accesibilidadYTransporte {
+    grid-area: title;
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+    text-align: center;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        /* Al final de la animación, mostramos los párrafos */
+        transform: translateX(0);
+        /* Los párrafos vuelven a su posición original */
+    }
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    /* Establece el aspect ratio del elemento */
+    padding-right: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.margenTop {
+    margin-top: 4%;
+    grid-area: title;
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+    text-align: center;
+}
+
+#imgAcercaDeNosotros {
+    margin-top: 2%;
+}
+
+
+#imgST {
+    grid-area: title;
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+    text-align: center;
+}
+
+.history-section {
+
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+    text-align: center;
+}
+
+#parrafoQS {
+    color: #ffffff;
+    font-size: 110%;
+}
+
+.mission-section {
+    display: flex;
+    align-items: center;
+}
+
+.vision-section {
+    display: flex;
+    align-items: center;
+}
+
+.image-container2 {
+    margin-right: 10%;
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+.content-container2 {
+    flex-grow: 1;
+}
+
+#parrafoQS2 {
+    color: #ffffff;
+    font-size: 110%;
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+.video {
+    align-items: center;
+    margin-top: 5%;
+}
+
+#FDC {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#palabras {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 2s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#name {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.4s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#email {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.6s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#message {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.8s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+.btn {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 2.1s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#password {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.8s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#confirm-password {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 2s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+.form-control {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 2s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#CUC {
+    font-size: 250%;
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(-100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 2s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+#palabras2 {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1s forwards;
+    /* Aplicamos la animación de entrada */
+}
+
+.col-md-6 {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateY(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+
+}
+
+.col-md-8 {
+    /* Ajusta este valor según sea necesario */
+    opacity: 0;
+    /* Establecemos la opacidad inicial en 0 para ocultar los párrafos */
+    transform: translateX(100%);
+    /* Desplazamos los párrafos hacia la izquierda */
+    animation: slide-in 1.5s forwards;
+    /* Aplicamos la animación de entrada */
+
+}
+
+/* Estilos CSS para las animaciones y efectos visuales */
+/* Estilos CSS para el apartado de perfil de usuario */
+
+.profile-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #686767;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 4%;
+}
+
+.profile-section h2 {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover img {
+    transform: scale(1.1);
+}
+
+.username-change,
+.email-display,
+.password-display {
+    margin-bottom: 20px;
+}
+
+.username-change label,
+.email-display label,
+.password-display label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.username-change input,
+.email-display input,
+.password-display input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e7df00;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.username-change input:focus,
+.email-display input:focus,
+.password-display input:focus {
+    border-color: #f3d600;
+    box-shadow: 0 0 3px rgba(255, 153, 51, 0.5);
+}
+
+#mensaje-exito {
+    display: none;
+}

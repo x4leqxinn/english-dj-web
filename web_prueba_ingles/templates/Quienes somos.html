@@ -1,0 +1,154 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes somos</title>
+    <!--Librerias de js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <!--Librerias de css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/disenio.css'%}">
+</head>
+
+<body>
+    <!--Aqui está toda la barra de navegacion por las distintas secciones de la pagina web -->
+    <nav class="navbar navbar-expand-lg" id="menu_navegador">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="letras" href="{%url 'Index.html'%}"><b>FixMasters</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active seleccion" id="letras" aria-current="page"
+                            href="{%url 'Index.html'%}">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle seleccion" id="letras" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Informacion adicional
+                        </a>
+                        <ul class="dropdown-menu" id="menu_navegador">
+                            <li><a class="dropdown-item" id="letras" href="{%url 'Trabajos realizados.html'%}">Trabajos
+                                    realizados</a></li>
+                            <li><a class="dropdown-item" id="letras" href="{%url 'Donde Estamos.html'%}">Nuestra
+                                    Ubicación</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" id="letras" href="{%url 'Quienes somos.html'%}">Quienes
+                                    somos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active seleccion" id="letras" aria-current="page"
+                            href="{%url 'Formulario de contacto.html'%}">Contactanos</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active seleccionClaro" id="letras" aria-current="page"
+                            href="{%url 'Crear cuenta.html'%}">Crear cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active seleccionClaro" id="letras" aria-current="page"
+                            href="{%url 'Iniciar Sesion.html'%}">Iniciar Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sección Acerca de nosotros -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="text-center" id="imgAcercaDeNosotros"> Acerca de nosotros</h2>
+            <br>
+            <div id="imgST">
+                <img src="{% static 'images/servicioTecnico.png'%}" class="rounded mx-auto d-block" width="50%">
+            </div>
+            <br>
+
+            <div class="history-section">
+                <h3>Historia de la empresa</h3>
+                <p id="parrafoQS">FixMasters fue fundada en el año XXXX por [Nombre del Fundador], con la visión de
+                    proporcionar
+                    servicios de reparación de hardware confiables y de alta calidad para satisfacer las necesidades
+                    crecientes del mercado. Desde sus humildes comienzos como una pequeña tienda de reparación de
+                    computadoras, FixMasters ha experimentado un crecimiento significativo a lo largo de los años.</p>
+                <p id="parrafoQS">Gracias a nuestra dedicación inquebrantable a la excelencia y nuestro enfoque en la
+                    satisfacción del
+                    cliente, hemos logrado construir una sólida reputación en la industria de la reparación de hardware.
+                    Nuestro compromiso con la calidad y el servicio excepcional nos ha permitido expandir nuestras
+                    operaciones y convertirnos en líderes del mercado en el sector de servicios de reparación.</p>
+            </div>
+
+            <div class="vision-section">
+                <div class="image-container2">
+                    <img src="{% static 'images/vision.png'%}" class="rounded" width="120%">
+                </div>
+                <div class="content-container2">
+                    <h3>Visión</h3>
+                    <p id="parrafoQS2">Nuestra visión es convertirnos en el proveedor líder de servicios de reparación
+                        de
+                        hardware a nivel nacional, reconocidos por nuestra calidad, confiabilidad y atención al cliente.
+                        Buscamos ser la opción preferida de individuos y empresas cuando se trata de soluciones
+                        confiables y eficientes para sus necesidades de reparación de hardware.</p>
+                </div>
+            </div>
+            <div class="mission-section">
+                <div class="image-container2">
+                    <img src="{% static 'images/mision.png'%}" class="rounded mx-auto d-block" width="120%">
+                </div>
+                <div class="content-container2">
+                    <h3>Misión</h3>
+                    <p id="parrafoQS2">En FixMasters, nuestra misión es ofrecer servicios de reparación de hardware de
+                        alta
+                        calidad,
+                        brindando soluciones confiables y eficientes para las necesidades de nuestros clientes. Nos
+                        comprometemos a utilizar equipos de última generación, técnicas avanzadas y un equipo de
+                        expertos
+                        altamente capacitados para garantizar la satisfacción del cliente en cada interacción.</p>
+                    <p id="parrafoQS2">Además, nos esforzamos por establecer relaciones duraderas con nuestros clientes,
+                        basadas en la
+                        confianza, la transparencia y la calidad del servicio. Nuestro objetivo es superar las
+                        expectativas
+                        de nuestros clientes y brindarles la tranquilidad de saber que sus dispositivos electrónicos
+                        están
+                        en manos expertas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+</body>
+<!--Pie de pagina-->
+<footer>
+    <div class="container">
+        <h2 class="section-title text-center1">Contáctanos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Información de Contacto</h2>
+                <p>Dirección: Calle Principal #123, Ciudad, País</p>
+                <p>Teléfono: +123 456 789</p>
+                <p>Email: info@fixmasters.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
