@@ -86,7 +86,7 @@ def iniciar_sesion(request):
             mensaje = 'Credenciales inválidas. Inténtalo de nuevo.'
     return render(request, 'Iniciar Sesion.html', {'mensaje': mensaje})
 
-
+@login_required(login_url='Iniciar Sesion.html')
 def cerrar_sesion(request):
     logout(request)
-    return redirect('index')
+    return redirect(to='index')
