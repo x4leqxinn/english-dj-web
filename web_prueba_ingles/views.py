@@ -56,7 +56,7 @@ def registrarse(request):
             contexto = {"mensaje": "El usuario ya se encuentra registrado"}
             return render(request, 'Crear cuenta.html', contexto)
 
-        nuevo_usuario = User(username=usuario, email=correo, password=make_password(passw))
+        nuevo_usuario = User(username=usuario, email=correo, password=make_password(passw),is_staff= False)
         nuevo_usuario.save()
         contexto = {"mensaje": "Se creó la cuenta correctamente"}
 
