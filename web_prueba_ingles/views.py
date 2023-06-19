@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import *
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
-from django.contrib.auth import logout
 from .models import User
+from django.contrib.auth import authenticate,logout,login
+from django.contrib.auth.decorators import login_required, permission_required
 
 def index(request):
     return render(request, 'Index.html')
@@ -73,21 +73,17 @@ def obtener_usuario(request):
 
 
 def iniciar_sesion(request):
+    mensaje = None
     if request.method == 'POST':
         email = request.POST.get('email')
         password = request.POST.get('password')
 
-        try:
-            usuario = User.objects.get(email=email)
-            if check_password(password, usuario.password):
-                return render(request, 'Index.html')
-            else:
-                mensaje = 'Credenciales inválidas. Inténtalo de nuevo.'
-        except User.DoesNotExist:
+        auth = authenticate(request,email = email, password = password)
+        if auth is not None and  auth.is_active:
+            login(request,auth)
+            return render(request,"Index.html")
+        else:
             mensaje = 'Credenciales inválidas. Inténtalo de nuevo.'
-    else:
-        mensaje = ''
-
     return render(request, 'Iniciar Sesion.html', {'mensaje': mensaje})
 
 
