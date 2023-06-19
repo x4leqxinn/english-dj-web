@@ -62,18 +62,15 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active seleccionClaro" href="{%url 'Usuario.html'%}"  id="letras" aria-current="page"> 
-                          <img src="{% static 'images/tuercaaa.png' %}" width="20px" height="20pz"> Ajustes
-                        </a>
-                      </li>
-
-
-
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <span class="nav-link seleccionClaro" id="letras" aria-current="page" 
+                        <span class="nav-link" id="letras" aria-current="page" 
                             href="">Bienvenido {{ user.username }}</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active seleccionClaro" href="{%url 'Usuario.html'%}"  id="letras" aria-current="page"> 
+                            <img src="{% static 'images/tuercaaa.png' %}" width="20px" height="20pz"> Ajustes
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active seleccionClaro" id="letras" aria-current="page"
