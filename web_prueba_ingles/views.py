@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth import logout
+from .models import User
 
 def index(request):
     return render(request, 'Index.html')
@@ -51,11 +52,11 @@ def registrarse(request):
             contexto = {"mensaje": "Las contraseñas no coinciden"}
             return render(request, 'Crear cuenta.html', contexto)
 
-        if Usuario.objects.filter(email=correo).exists():
+        if User.objects.filter(email=correo).exists():
             contexto = {"mensaje": "El usuario ya se encuentra registrado"}
             return render(request, 'Crear cuenta.html', contexto)
 
-        nuevo_usuario = Usuario(usuario=usuario, email=correo, password=make_password(passw))
+        nuevo_usuario = User(username=usuario, email=correo, password=make_password(passw))
         nuevo_usuario.save()
         contexto = {"mensaje": "Se creó la cuenta correctamente"}
 
