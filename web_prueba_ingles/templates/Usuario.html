@@ -14,7 +14,7 @@
         <!-- Cambiar nombre de usuario -->
         <div class="username-change">
           <label for="name">Nombre de usuario:</label>
-          <input type="text" pattern="[a-zA-Z0-9]+" maxlength="15" id="name" value="{{ username }}" disabled>
+          <input type="text" pattern="[a-zA-Z0-9]+" maxlength="15" id="name" value="{{ user.username }}" disabled>
           <br>
           <button id="change-username-btn">Cambiar</button>
         </div>
@@ -22,7 +22,7 @@
         <!-- Mostrar correo -->
         <div class="email-display">
           <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" pattern="[a-zA-Z0-9@.]+" maxlength="50" value="{{ email }}" disabled>
+          <input type="email" id="email" pattern="[a-zA-Z0-9@.]+" maxlength="50" value="{{ user.email }}" disabled>
         </div>
         
         <!-- Mostrar contraseña oculta -->
