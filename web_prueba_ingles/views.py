@@ -19,7 +19,7 @@ def crearCuenta(request):
 def dondeEstamos(request):
     return render(request, 'Donde Estamos.html')
 
-
+@login_required(login_url='Iniciar Sesion.html')
 def formularioDeContacto(request):
     return render(request, 'Formulario de contacto.html')
 
@@ -35,7 +35,7 @@ def quienesSomos(request):
 def trabajosRealizados(request):
     return render(request, 'Trabajos realizados.html')
 
-
+@login_required(login_url='Iniciar Sesion.html')
 def usuario(request):
     return render(request, 'Usuario.html')
 
@@ -66,7 +66,7 @@ def registrarse(request):
 
 
 
-@login_required
+@login_required(login_url='Iniciar Sesion.html')
 def obtener_usuario(request):
     usuario = request.user
     return usuario
