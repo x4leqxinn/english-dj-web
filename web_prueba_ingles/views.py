@@ -78,12 +78,12 @@ def iniciar_sesion(request):
         password = request.POST.get('password')
 
         try:
-            usuario = Usuario.objects.get(email=email)
+            usuario = User.objects.get(email=email)
             if check_password(password, usuario.password):
                 return render(request, 'Index.html')
             else:
                 mensaje = 'Credenciales inválidas. Inténtalo de nuevo.'
-        except Usuario.DoesNotExist:
+        except User.DoesNotExist:
             mensaje = 'Credenciales inválidas. Inténtalo de nuevo.'
     else:
         mensaje = ''
