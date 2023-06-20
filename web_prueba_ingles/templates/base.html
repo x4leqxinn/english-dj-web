@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -79,12 +81,12 @@
                     {% else %}
                         <li class="nav-item">
                             <a class="nav-link active seleccionClaro" id="letras" aria-current="page"
-                                href="{%url 'Crear cuenta.html'%}">Crear cuenta</a>
+                                href="{%url 'Crear cuenta.html'%}">{% trans "sign up" %}</a>
                         </li>
-                        
+                        {% get_current_language as LANGUAGE_CODE %}
                         <li class="nav-item">
                             <a class="nav-link active seleccionClaro" id="letras" aria-current="page"
-                                href="{%url 'Iniciar Sesion.html'%}">Iniciar Sesion</a>
+                                href="{%url 'Iniciar Sesion.html'%}">{% trans "log in" %} {{ LANGUAGE_CODE }}</a>
                         </li>
                     {% endif %}
 
