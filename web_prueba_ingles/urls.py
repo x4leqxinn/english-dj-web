@@ -17,6 +17,7 @@ urlpatterns = [
     path('cerrar-sesion/', cerrar_sesion, name='logout'),
     path('set-locale/<str:language_code>/', set_language, name='set-language'),
     path('set-photo/', set_photo, name='set-photo'),
+    path('send-message/', send_message, name='send-message'),
 ]
 
 # Configuración para servir archivos de medios en desarrollo

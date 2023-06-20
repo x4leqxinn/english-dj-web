@@ -24,7 +24,6 @@ def dondeEstamos(request):
 
 @login_required(login_url='Iniciar Sesion.html')
 def formularioDeContacto(request):
-
     return render(request, 'Formulario de contacto.html')
 
 
@@ -109,3 +108,12 @@ def set_photo(request):
             request.user.image = image
             request.user.save()
     return render(request, 'Usuario.html')
+
+@login_required(login_url='Iniciar Sesion.html')
+def send_message(request):
+    if request.POST:
+        name = request.POST.get('txtName')
+        message = request.POST.get('txtMessage')
+        email = request.user.email
+        Contact.objects.create(name=name,message=message,email=email)
+    return render(request, 'Formulario de contacto.html')

@@ -51,7 +51,7 @@ class Contact(models.Model):
     email = models.CharField(max_length=50)
     message = models.CharField(max_length=600)
 
-    def str(self):
+    def __str__(self):
         return self.name
 
     class Meta:
