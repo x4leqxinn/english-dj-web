@@ -117,3 +117,20 @@ def send_message(request):
         email = request.user.email
         Contact.objects.create(name=name,message=message,email=email)
     return render(request, 'Formulario de contacto.html')
+
+@login_required(login_url='Iniciar Sesion.html')
+def set_username(request):
+    message = {}
+    default_user = request.user.username
+    if request.POST:
+        username = request.POST.get("txtUsername")
+        if username:
+            request_username = request.user
+            request_username.username = username
+            try:
+                request_username.save()
+            except:
+                request.user.username = default_user
+                message = {'message' : 'El usuario ya existe!'}
+                
+    return render(request, 'Usuario.html', message)

@@ -10,7 +10,7 @@
           {% csrf_token %}
           <!-- Foto de perfil -->
           <div class="profile-picture">
-            {% if request.user.image.url %}
+            {% if request.user.image %}
               <img src="{{ request.user.image.url }}" alt="Foto de perfil" id="profile-picture-img" title="Foto de perfil">
             {% else %}
               <img src="https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280.jpg" alt="Foto de perfil por defecto" id="profile-picture-img" title="Foto de perfil por defecto">
@@ -23,13 +23,25 @@
 
         </form>
         
-        <!-- Cambiar nombre de usuario -->
-        <div class="username-change">
-          <label for="name">{% trans "user_username_label" %}</label>
-          <input type="text" pattern="[a-zA-Z0-9]+" maxlength="15" id="name" value="{{ user.username }}" disabled>
-          <br>
-        </div>
-        
+        <form method="POST" action="{% url 'set-username' %}">
+          {% csrf_token %}
+          <!-- Cambiar nombre de usuario -->
+          <div class="username-change">
+            <label for="name">{% trans "user_username_label" %}</label>
+            <input type="text" pattern="[a-zA-Z0-9]+" maxlength="15" id="name" value="{{ user.username }}" name="txtUsername">
+            <br>
+          </div>
+
+          <button type="submit" id="change-username-btn">{% trans "user_button_change" %}</button>
+
+          {% if message %}
+          <div class="alert alert-danger" role="alert">
+              {{ message }}
+          </div>
+          {% endif %}
+          
+        </form>
+
         <!-- Mostrar correo -->
         <div class="email-display">
           <label for="email">{% trans "user_email_label" %}</label>
