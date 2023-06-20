@@ -64,6 +64,23 @@
                     {% endif %}
                 </ul>
                 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle seleccion" id="letras" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Idiomas
+                    </a>
+                    <ul class="dropdown-menu" id="menu_navegador">
+                        <li><a class="dropdown-item" id="letras" href="{% url 'set-language' 'es' %}"> 
+                            <img width="20px" height="20px" src="{% static 'images/locale/es.png' %}" alt="Español">
+                            Español
+                        </a></li>
+                        <li><a class="dropdown-item" id="letras" href="{% url 'set-language' 'en' %}"> 
+                            <img width="20px" height="20px" src="{% static 'images/locale/en.png' %}" alt="Inglés">
+                            Inglés
+                        </a></li>
+                    </ul>
+                </li>
+
                 <ul class="navbar-nav ml-auto">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -89,7 +106,6 @@
                                 href="{%url 'Iniciar Sesion.html'%}">{% trans "log in" %}</a>
                         </li>
                     {% endif %}
-
                 </ul>
             </div>
         </div>

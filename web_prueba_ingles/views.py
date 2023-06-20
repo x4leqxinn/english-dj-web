@@ -12,7 +12,6 @@ from django.http import HttpResponseRedirect
 from django.conf import settings
 
 def index(request):
-    change_language(request,'es')
     return render(request, 'Index.html')
 
 
@@ -97,8 +96,7 @@ def cerrar_sesion(request):
     return redirect(to='index')
 
 
-
-
-def change_language(request, language_code):
+def set_language(request, language_code):
     request.session['django_language'] = language_code
+    return redirect(to='index')
 
