@@ -210,3 +210,39 @@ msgstr "You do not have an account?"
 #: web_prueba_ingles/templates/Iniciar Sesion.html:31
 msgid "login_signup_button"
 msgstr "Sign up"
+
+#: web_prueba_ingles/templates/Quienes somos.html:8
+msgid "about_title"
+msgstr "About us"
+
+#: web_prueba_ingles/templates/Quienes somos.html:16
+msgid "about_history_title"
+msgstr "Company history"
+
+#: web_prueba_ingles/templates/Quienes somos.html:18
+msgid "about_history_text_1"
+msgstr "FixMasters was founded in the year 1969 by Ricardo Milos, with a vision to provide reliable, high quality hardware repair services to meet the always growing needs of the market. From it’s humble beginnings as a small computer repair store, FixMasters has experienced significant growth over the years."
+
+#: web_prueba_ingles/templates/Quienes somos.html:26
+msgid "about_history_text_2"
+msgstr "Thanks to our unwavering dedication to excellence and our focus on customer satisfaction, we have built a solid reputation in the hardware repair industry. Our commitment with quality and exceptional service has allowed us to expand our operations and become a market leader in the repair services sector."
+
+#: web_prueba_ingles/templates/Quienes somos.html:40
+msgid "about_vision_title"
+msgstr "Vission"
+
+#: web_prueba_ingles/templates/Quienes somos.html:42
+msgid "about_vision_text"
+msgstr "Our vision is to become the leading provider of hardware repair services nation-wide, recognized for our quality, reliability and customer service. We seek to be the preferred choice of people and businesses when it comes to reliable and efficient solutions for their hardware repair needs."
+
+#: web_prueba_ingles/templates/Quienes somos.html:56
+msgid "about_mission_title"
+msgstr "Mission"
+
+#: web_prueba_ingles/templates/Quienes somos.html:58
+msgid "about_mission_text_1"
+msgstr "Here at FixMasters, our mission is to offer high quality hardware repair services, providing reliable and efficient solutions to our customer’s needs. We are committed to using the most recent equipment, advanced techniques and a team of highly trained experts to ensure customer satisfaction with every interaction."
+
+#: web_prueba_ingles/templates/Quienes somos.html:68
+msgid "about_mission_text_2"
+msgstr "Also, we strive to establish long-lasting relationships with our customers, based on trust, transparency and quality of service. Our goal is to exceed our customers' expectations and provide them with peace of mind knowing that their electronic devices are in expert hands."

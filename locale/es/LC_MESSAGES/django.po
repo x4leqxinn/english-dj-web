@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 04:09+0000\n"
+"POT-Creation-Date: 2023-06-20 04:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,70 +116,6 @@ msgstr ""
 "debes iniciar sesion, si no tienes una cuenta en FixMasters ¡que esperas "
 "para crearla!"
 
-#: web_prueba_ingles/templates/base.html:43
-msgid "home"
-msgstr "Inicio"
-
-#: web_prueba_ingles/templates/base.html:48
-msgid "additional information"
-msgstr "Información adicional"
-
-#: web_prueba_ingles/templates/base.html:51
-msgid "completed works"
-msgstr "Trabajos realizados"
-
-#: web_prueba_ingles/templates/base.html:52
-msgid "our location"
-msgstr "Nuestra ubicación"
-
-#: web_prueba_ingles/templates/base.html:56
-msgid "About us"
-msgstr "Acerca de nosotros"
-
-#: web_prueba_ingles/templates/base.html:61
-msgid "contact"
-msgstr "Contacto"
-
-#: web_prueba_ingles/templates/base.html:70
-msgid "welcome_user"
-msgstr ""
-
-#: web_prueba_ingles/templates/base.html:74
-msgid "settings"
-msgstr "Ajustes"
-
-#: web_prueba_ingles/templates/base.html:79
-msgid "log out"
-msgstr "Cerrar sesión"
-
-#: web_prueba_ingles/templates/base.html:84
-msgid "sign up"
-msgstr "Registrarse"
-
-#: web_prueba_ingles/templates/base.html:88
-msgid "log in"
-msgstr "Iniciar sesión"
-
-#: web_prueba_ingles/templates/base.html:108
-msgid "footer_header"
-msgstr "Contáctanos"
-
-#: web_prueba_ingles/templates/base.html:111
-msgid "footer_title"
-msgstr "Información de contacto"
-
-#: web_prueba_ingles/templates/base.html:112
-msgid "footer_address"
-msgstr "Dirección"
-
-#: web_prueba_ingles/templates/base.html:113
-msgid "footer_phone"
-msgstr "Teléfono"
-
-#: web_prueba_ingles/templates/base.html:114
-msgid "footer_email"
-msgstr "Correo electrónico"
-
 #: web_prueba_ingles/templates/Iniciar Sesion.html:8
 msgid "login_title"
 msgstr "Iniciar sesión"
@@ -211,3 +147,103 @@ msgstr "¿Aún no tienes cuenta?"
 #: web_prueba_ingles/templates/Iniciar Sesion.html:31
 msgid "login_signup_button"
 msgstr "Crear cuenta"
+
+#: web_prueba_ingles/templates/base.html:43
+msgid "home"
+msgstr "Inicio"
+
+#: web_prueba_ingles/templates/base.html:48
+msgid "additional information"
+msgstr "Información adicional"
+
+#: web_prueba_ingles/templates/base.html:51
+msgid "completed works"
+msgstr "Trabajos realizados"
+
+#: web_prueba_ingles/templates/base.html:52
+msgid "our location"
+msgstr "Nuestra ubicación"
+
+#: web_prueba_ingles/templates/base.html:56
+msgid "About us"
+msgstr "Acerca de nosotros"
+
+#: web_prueba_ingles/templates/base.html:62
+msgid "contact"
+msgstr "Contacto"
+
+#: web_prueba_ingles/templates/base.html:71
+msgid "welcome_user"
+msgstr ""
+
+#: web_prueba_ingles/templates/base.html:75
+msgid "settings"
+msgstr "Ajustes"
+
+#: web_prueba_ingles/templates/base.html:80
+msgid "log out"
+msgstr "Cerrar sesión"
+
+#: web_prueba_ingles/templates/base.html:85
+msgid "sign up"
+msgstr "Registrarse"
+
+#: web_prueba_ingles/templates/base.html:89
+msgid "log in"
+msgstr "Iniciar sesión"
+
+#: web_prueba_ingles/templates/base.html:109
+msgid "footer_header"
+msgstr "Contáctanos"
+
+#: web_prueba_ingles/templates/base.html:112
+msgid "footer_title"
+msgstr "Información de contacto"
+
+#: web_prueba_ingles/templates/base.html:113
+msgid "footer_address"
+msgstr "Dirección"
+
+#: web_prueba_ingles/templates/base.html:114
+msgid "footer_phone"
+msgstr "Teléfono"
+
+#: web_prueba_ingles/templates/base.html:115
+msgid "footer_email"
+msgstr "Correo electrónico"
+
+#: web_prueba_ingles/templates/Quienes somos.html:8
+msgid "about_title"
+msgstr "Quiénes somos"
+
+#: web_prueba_ingles/templates/Quienes somos.html:16
+msgid "about_history_title"
+msgstr "Historia"
+
+#: web_prueba_ingles/templates/Quienes somos.html:18
+msgid "about_history_text_1"
+msgstr "FixMasters fue fundada en el año 1969 por Ricardo Milos, con la visión de proporcionar servicios de reparación de hardware confiables y de alta calidad para satisfacer las necesidades crecientes del mercado. Desde sus humildes comienzos como una pequeña tienda de reparación de computadoras, FixMasters ha experimentado un crecimiento significativo a lo largo de los años."
+
+#: web_prueba_ingles/templates/Quienes somos.html:26
+msgid "about_history_text_2"
+msgstr "Gracias a nuestra dedicación inquebrantable a la excelencia y nuestro enfoque en la satisfacción del cliente, hemos logrado construir una sólida reputación en la industria de la reparación de hardware. Nuestro compromiso con la calidad y el servicio excepcional nos ha permitido expandir nuestras operaciones y convertirnos en líderes del mercado en el sector de servicios de reparación."
+
+#: web_prueba_ingles/templates/Quienes somos.html:40
+msgid "about_vision_title"
+msgstr "Visión"
+
+#: web_prueba_ingles/templates/Quienes somos.html:42
+msgid "about_vision_text"
+msgstr "Nuestra visión es convertirnos en el proveedor líder de servicios de reparación de hardware a nivel nacional, reconocidos por nuestra calidad, confiabilidad y atención al cliente. Buscamos ser la opción preferida de individuos y empresas cuando se trata de soluciones confiables y eficientes para sus necesidades de reparación de hardware."
+
+#: web_prueba_ingles/templates/Quienes somos.html:56
+msgid "about_mission_title"
+msgstr "Misión"
+
+#: web_prueba_ingles/templates/Quienes somos.html:58
+msgid "about_mission_text_1"
+msgstr "En FixMasters, nuestra misión es ofrecer servicios de reparación de hardware de alta calidad, brindando soluciones confiables y eficientes para las necesidades de nuestros clientes. Nos comprometemos a utilizar equipos de última generación, técnicas avanzadas y un equipo de expertos altamente capacitados para garantizar la satisfacción del cliente en cada interacción."
+
+#: web_prueba_ingles/templates/Quienes somos.html:68
+msgid "about_mission_text_2"
+msgstr "Además, nos esforzamos por establecer relaciones duraderas con nuestros clientes, basadas en la confianza, la transparencia y la calidad del servicio. Nuestro objetivo es superar las expectativas de nuestros clientes y brindarles la tranquilidad de saber que sus dispositivos electrónicos están en manos expertas."

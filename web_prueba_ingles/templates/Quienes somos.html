@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}  
 {% block content %}
     <!-- Sección Acerca de nosotros -->
     <section class="about-section">
         <div class="container">
-            <h2 class="text-center" id="imgAcercaDeNosotros"> Acerca de nosotros</h2>
+            <h2 class="text-center" id="imgAcercaDeNosotros">{% trans "about_title" %}</h2>
             <br>
             <div id="imgST">
                 <img src="{% static 'images/servicioTecnico.png'%}" class="rounded mx-auto d-block" width="50%">
@@ -12,17 +13,13 @@
             <br>
 
             <div class="history-section">
-                <h3>Historia de la empresa</h3>
-                <p id="parrafoQS">FixMasters fue fundada en el año XXXX por [Nombre del Fundador], con la visión de
-                    proporcionar
-                    servicios de reparación de hardware confiables y de alta calidad para satisfacer las necesidades
-                    crecientes del mercado. Desde sus humildes comienzos como una pequeña tienda de reparación de
-                    computadoras, FixMasters ha experimentado un crecimiento significativo a lo largo de los años.</p>
-                <p id="parrafoQS">Gracias a nuestra dedicación inquebrantable a la excelencia y nuestro enfoque en la
-                    satisfacción del
-                    cliente, hemos logrado construir una sólida reputación en la industria de la reparación de hardware.
-                    Nuestro compromiso con la calidad y el servicio excepcional nos ha permitido expandir nuestras
-                    operaciones y convertirnos en líderes del mercado en el sector de servicios de reparación.</p>
+                <h3>{% trans "about_history_title" %}</h3>
+                <p id="parrafoQS">
+                    {% trans "about_history_text_1"%}
+                </p>
+                <p id="parrafoQS">
+                    {% trans "about_history_text_2"%}
+                </p>
             </div>
 
             <div class="vision-section">
@@ -30,12 +27,10 @@
                     <img src="{% static 'images/vision.png'%}" class="rounded" width="120%">
                 </div>
                 <div class="content-container2">
-                    <h3>Visión</h3>
-                    <p id="parrafoQS2">Nuestra visión es convertirnos en el proveedor líder de servicios de reparación
-                        de
-                        hardware a nivel nacional, reconocidos por nuestra calidad, confiabilidad y atención al cliente.
-                        Buscamos ser la opción preferida de individuos y empresas cuando se trata de soluciones
-                        confiables y eficientes para sus necesidades de reparación de hardware.</p>
+                    <h3>{% trans "about_vision_title" %}</h3>
+                    <p id="parrafoQS2">
+                        {% trans "about_vision_text" %}
+                    </p>
                 </div>
             </div>
             <div class="mission-section">
@@ -43,21 +38,13 @@
                     <img src="{% static 'images/mision.png'%}" class="rounded mx-auto d-block" width="120%">
                 </div>
                 <div class="content-container2">
-                    <h3>Misión</h3>
-                    <p id="parrafoQS2">En FixMasters, nuestra misión es ofrecer servicios de reparación de hardware de
-                        alta
-                        calidad,
-                        brindando soluciones confiables y eficientes para las necesidades de nuestros clientes. Nos
-                        comprometemos a utilizar equipos de última generación, técnicas avanzadas y un equipo de
-                        expertos
-                        altamente capacitados para garantizar la satisfacción del cliente en cada interacción.</p>
-                    <p id="parrafoQS2">Además, nos esforzamos por establecer relaciones duraderas con nuestros clientes,
-                        basadas en la
-                        confianza, la transparencia y la calidad del servicio. Nuestro objetivo es superar las
-                        expectativas
-                        de nuestros clientes y brindarles la tranquilidad de saber que sus dispositivos electrónicos
-                        están
-                        en manos expertas.</p>
+                    <h3>{% trans "about_mission_title" %}</h3>
+                    <p id="parrafoQS2">
+                        {% trans "about_mission_text_1" %}
+                    </p>
+                    <p id="parrafoQS2">
+                        {% trans "about_mission_text_2" %}
+                    </p>
                 </div>
             </div>
         </div>
