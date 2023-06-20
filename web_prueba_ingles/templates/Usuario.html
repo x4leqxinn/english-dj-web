@@ -6,11 +6,17 @@
     <div class="profile-section">
         <h2>{% trans "user_title" %}</h2>
         
-        <form method="POST" action="" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'set-photo' %}" enctype="multipart/form-data">
+          {% csrf_token %}
           <!-- Foto de perfil -->
           <div class="profile-picture">
-            <img src="ruta_de_la_imagen.jpg" alt="Foto de perfil" id="profile-picture-img">
-            <input type="file" accept="image/*">
+            {% if request.user.image.url %}
+              <img src="{{ request.user.image.url }}" alt="Foto de perfil" id="profile-picture-img" title="Foto de perfil">
+            {% else %}
+              <img src="https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280.jpg" alt="Foto de perfil por defecto" id="profile-picture-img" title="Foto de perfil por defecto">
+            {% endif %}
+            
+            <input type="file" accept="image/*" name="txtProfileImg">
           </div>
 
           <button type="submit" id="change-username-btn">{% trans "user_button_change" %}</button>

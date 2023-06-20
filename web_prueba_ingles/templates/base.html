@@ -63,7 +63,20 @@
                     </li>
                     {% endif %}
                 </ul>
-                
+
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <span class="nav-link" id="letras" aria-current="page" href="">
+                            {% if request.user.image.url %}
+                                <img style="border-radius: 50%;" width="40px" height="40px" src="{{ request.user.image.url }}" alt="">
+                            {% else %}
+                                <img style="border-radius: 50%;" width="40px" height="40px" src="https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280.jpg" alt="">
+                            {% endif %}
+                            {% trans "welcome_user" %} {{ user.username }}
+                        </span>
+                    </li>
+                {% endif %}
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle seleccion" id="letras" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -83,10 +96,6 @@
 
                 <ul class="navbar-nav ml-auto">
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <span class="nav-link" id="letras" aria-current="page" 
-                            href="">{% trans "welcome_user" %} {{ user.username }}</span>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link active seleccionClaro" href="{%url 'Usuario.html'%}"  id="letras" aria-current="page"> 
                             <img src="{% static 'images/tuercaaa.png' %}" width="20px" height="20pz"> {% trans "settings" %}

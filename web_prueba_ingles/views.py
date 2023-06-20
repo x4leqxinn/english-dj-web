@@ -100,3 +100,12 @@ def set_language(request, language_code):
     request.session['django_language'] = language_code
     return redirect(to='index')
 
+
+@login_required(login_url='Iniciar Sesion.html')
+def set_photo(request):
+    if request.POST:
+        image = request.FILES.get("txtProfileImg")
+        if image:
+            request.user.image = image
+            request.user.save()
+    return render(request, 'Usuario.html')
