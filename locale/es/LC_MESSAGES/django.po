@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 05:07+0000\n"
+"POT-Creation-Date: 2023-06-20 05:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -312,6 +312,26 @@ msgstr ""
 "clientes para comprender sus necesidades y brindarles la mejor experiencia "
 "posible."
 
+#: web_prueba_ingles/templates/Usuario.html:7
+msgid "user_title"
+msgstr "Perfil de usuario"
+
+#: web_prueba_ingles/templates/Usuario.html:17
+msgid "user_username_label"
+msgstr "Nombre de usuario"
+
+#: web_prueba_ingles/templates/Usuario.html:20
+msgid "user_button_change"
+msgstr "Cambiar"
+
+#: web_prueba_ingles/templates/Usuario.html:25
+msgid "user_email_label"
+msgstr "Correo eléctronico"
+
+#: web_prueba_ingles/templates/Usuario.html:31
+msgid "user_password_label"
+msgstr "Contraseña"
+
 #: web_prueba_ingles/templates/base.html:43
 msgid "home"
 msgstr "Inicio"
@@ -336,62 +356,54 @@ msgstr "Acerca de nosotros"
 msgid "contact"
 msgstr "Contacto"
 
-#: web_prueba_ingles/templates/base.html:71
+#: web_prueba_ingles/templates/base.html:88
 msgid "welcome_user"
 msgstr "Bienvenido"
 
-#: web_prueba_ingles/templates/base.html:75
+#: web_prueba_ingles/templates/base.html:92
 msgid "settings"
 msgstr "Ajustes"
 
-#: web_prueba_ingles/templates/base.html:80
+#: web_prueba_ingles/templates/base.html:97
 msgid "log out"
 msgstr "Cerrar sesión"
 
-#: web_prueba_ingles/templates/base.html:85
+#: web_prueba_ingles/templates/base.html:102
 msgid "sign up"
 msgstr "Registrarse"
 
-#: web_prueba_ingles/templates/base.html:89
+#: web_prueba_ingles/templates/base.html:106
 msgid "log in"
 msgstr "Iniciar sesión"
 
-#: web_prueba_ingles/templates/base.html:109
+#: web_prueba_ingles/templates/base.html:125
 msgid "footer_header"
 msgstr "Contáctanos"
 
-#: web_prueba_ingles/templates/base.html:112
+#: web_prueba_ingles/templates/base.html:128
 msgid "footer_title"
 msgstr "Información de contacto"
 
-#: web_prueba_ingles/templates/base.html:113
+#: web_prueba_ingles/templates/base.html:129
 msgid "footer_address"
 msgstr "Dirección"
 
-#: web_prueba_ingles/templates/base.html:114
+#: web_prueba_ingles/templates/base.html:130
 msgid "footer_phone"
 msgstr "Teléfono"
 
-#: web_prueba_ingles/templates/base.html:115
+#: web_prueba_ingles/templates/base.html:131
 msgid "footer_email"
 msgstr "Correo electrónico"
 
-#: web_prueba_ingles/templates/Usuario.html:7
-msgid "user_title"
-msgstr "Perfil de usuario"
+#: web_prueba_ingles/templates/base.html:70
+msgid "language_label"
+msgstr "Idioma"
 
-#: web_prueba_ingles/templates/Usuario.html:17
-msgid "user_username_label"
-msgstr "Nombre de usuario"
+#: web_prueba_ingles/templates/base.html:75
+msgid "language_esp_label"
+msgstr "Español"
 
-#: web_prueba_ingles/templates/Usuario.html:20
-msgid "user_button_change"
-msgstr "Cambiar"
-
-#: web_prueba_ingles/templates/Usuario.html:25
-msgid "user_email_label"
-msgstr "Correo eléctronico"
-
-#: web_prueba_ingles/templates/Usuario.html:31
-msgid "user_password_label"
-msgstr "Contraseña"
+#: web_prueba_ingles/templates/base.html:79
+msgid "language_en_label"
+msgstr "Inglés"

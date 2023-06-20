@@ -343,3 +343,15 @@ msgstr "Email"
 #: web_prueba_ingles/templates/Usuario.html:31
 msgid "user_password_label"
 msgstr "Password"
+
+#: web_prueba_ingles/templates/base.html:70
+msgid "language_label"
+msgstr "Language"
+
+#: web_prueba_ingles/templates/base.html:75
+msgid "language_esp_label"
+msgstr "Spanish"
+
+#: web_prueba_ingles/templates/base.html:79
+msgid "language_en_label"
+msgstr "English"

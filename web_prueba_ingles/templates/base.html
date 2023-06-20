@@ -67,16 +67,16 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle seleccion" id="letras" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Idiomas
+                        {% trans "language_label" %}
                     </a>
                     <ul class="dropdown-menu" id="menu_navegador">
                         <li><a class="dropdown-item" id="letras" href="{% url 'set-language' 'es' %}"> 
                             <img width="20px" height="20px" src="{% static 'images/locale/es.png' %}" alt="Español">
-                            Español
+                            {% trans "language_esp_label" %}
                         </a></li>
                         <li><a class="dropdown-item" id="letras" href="{% url 'set-language' 'en' %}"> 
                             <img width="20px" height="20px" src="{% static 'images/locale/en.png' %}" alt="Inglés">
-                            Inglés
+                            {% trans "language_en_label" %}
                         </a></li>
                     </ul>
                 </li>
@@ -111,10 +111,6 @@
         </div>
     </nav>
     <br>
-
-    {% get_current_language as LANGUAGE_CODE %}
-    {{LANGUAGE_CODE}}
-    {{request.session.django_language}}
 
 {% block content %}
 
