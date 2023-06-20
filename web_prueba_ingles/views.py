@@ -7,6 +7,9 @@ from django.contrib.auth.hashers import make_password
 from .models import User
 from django.contrib.auth import authenticate,logout,login
 from django.contrib.auth.decorators import login_required, permission_required
+from django.utils import translation
+from django.http import HttpResponseRedirect
+from django.conf import settings
 
 def index(request):
     change_language(request,'en')
@@ -22,6 +25,7 @@ def dondeEstamos(request):
 
 @login_required(login_url='Iniciar Sesion.html')
 def formularioDeContacto(request):
+
     return render(request, 'Formulario de contacto.html')
 
 
@@ -93,13 +97,8 @@ def cerrar_sesion(request):
     return redirect(to='index')
 
 
-from django.utils import translation
-from django.http import HttpResponseRedirect
-from django.conf import settings
+
 
 def change_language(request, language_code):
-    translation.activate(language_code)
     request.session['django_language'] = language_code
-    response = HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language_code)
-    return response
+

@@ -1,42 +1,42 @@
 {% extends 'base.html' %}
+{% load i18n %} 
 {% block content %}
 
     <!--Seccion donde se presenta el formulario para crear una cuenta -->
     <div class="container2">
         <div class="container3">
-            <h2 id="CUC">Crea una cuenta</h2>
+            <h2 id="CUC">{% trans "create_account_title" %}</h2>
         </div>
         <br>
 
         <form class="signup-form" method="POST" action="{% url 'registrarse' %}">
             {% csrf_token %}
             <div class="form-group">
-                <label for="user" id="palabras2">Usuario</label>
+                <label for="user" id="palabras2">{% trans "create_account_user_label" %}</label>
                 <br>
                 <input type="text" id="user" name="user" class="form-control" pattern="[a-zA-Z0-9]+" maxlength="15"
-                    placeholder="Ingresa un nombre de usuario" required>
+                    placeholder="{% trans "create_account_user_placeholder" %}" required>
             </div>
             <div class="form-group">
-                <label for="email" id="palabras2">Correo electrónico</label>
+                <label for="email" id="palabras2">{% trans "create_account_email_label" %}</label>
                 <br>
                 <input type="email" id="email" pattern="[a-zA-Z0-9@.]+" maxlength="50" name="email"
-                    placeholder="Ingresa tu correo electrónico" required>
+                    placeholder="{% trans "create_account_email_placeholder" %}" required>
             </div>
             <div class="form-group">
-                <label for="password" id="palabras2">Contraseña</label>
+                <label for="password" id="palabras2">{% trans "create_account_password_label" %}</label>
                 <br>
                 <input type="password" id="confirm-password" pattern="[a-zA-Z0-9]+" maxlength="15" name="password"
-                    placeholder="Ingresa una contraseña" required>
+                    placeholder="{% trans "create_account_password_placeholder" %}" required>
             </div>
             <div class="form-group">
-                <label for="confirm-password" id="palabras2">Confirmar contraseña</label>
+                <label for="confirm-password" id="palabras2">{% trans "create_account_confirm_password_label" %}</label>
                 <br>
                 <input type="password" id="confirm-password" pattern="[a-zA-Z0-9]+" maxlength="15"
-                    name="confirm-password" placeholder="Confirma la contraseña" required>
+                    name="confirm-password" placeholder="{% trans "create_account_confirm_password_placeholder" %}" required>
             </div>
             <div class="container3">
-                <button type="submit" onclick="mostrarMensajeExito()" class="btn" value="registrarse">Crear
-                    cuenta</button>
+                <button type="submit" onclick="mostrarMensajeExito()" class="btn" value="registrarse">{% trans "create_account_button_label" %}</button>
             </div>
             {% if mensaje %}
             <div class="alert {% if mensaje == 'Se creó la cuenta correctamente' %}alert-success{% elif mensaje == 'Las contraseñas no coinciden' %}alert-danger{% elif mensaje == 'El usuario ya se encuentra registrado' %}alert-danger{% endif %}" role="alert">
@@ -45,7 +45,7 @@
             {% endif %}
         </form>
         <div class="container3">
-            <p>¿Ya tienes una cuenta? <a href="{%url 'Iniciar Sesion.html'%}">Inicia sesión</a></p>
+            <p>{% trans "create_account_alredy_account_label" %} <a href="{%url 'Iniciar Sesion.html'%}">{% trans "create_account_button_login" %}</a></p>
         </div>
     </div>
     <br>

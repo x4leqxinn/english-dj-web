@@ -60,7 +60,9 @@
                         <a class="nav-link active seleccion" id="letras" aria-current="page"
                             href="{%url 'Formulario de contacto.html'%}">{% trans "contact" %}</a>
                     </li>
+                
                 </ul>
+                
                 <ul class="navbar-nav ml-auto">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -93,6 +95,9 @@
     </nav>
     <br>
 
+    {% get_current_language as LANGUAGE_CODE %}
+    {{LANGUAGE_CODE}}
+    {{request.session.django_language}}
 
 {% block content %}
 

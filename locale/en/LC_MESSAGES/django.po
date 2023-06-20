@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 03:01+0000\n"
+"POT-Creation-Date: 2023-06-20 04:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:8
+msgid "create_account_title"
+msgstr "Create account"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:15
+msgid "create_account_user_label"
+msgstr "Username"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:18
+msgid "create_account_user_placeholder"
+msgstr "Enter username"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:21
+msgid "create_account_email_label"
+msgstr "Email"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:24
+msgid "create_account_email_placeholder"
+msgstr "Enter email"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:27
+msgid "create_account_password_label"
+msgstr "Password"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:30
+msgid "create_account_password_placeholder"
+msgstr "Enter password"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:33
+msgid "create_account_confirm_password_label"
+msgstr "Confirm password"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:36
+msgid "create_account_confirm_password_placeholder"
+msgstr "Confirm your password"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:39
+msgid "create_account_button_label"
+msgstr "Sign up"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:48
+msgid "create_account_alredy_account_label"
+msgstr "Already have an account?"
+
+#: web_prueba_ingles/templates/Crear cuenta.html:48
+msgid "create_account_button_login"
+msgstr "Log in"
 
 #: web_prueba_ingles/templates/Index.html:7
 msgid "index_title"
@@ -36,7 +84,9 @@ msgstr "Hardware repair"
 
 #: web_prueba_ingles/templates/Index.html:22
 msgid "index_card_1_text"
-msgstr "We offer hardware repair for computers and notebooks, including component replacement and troubleshooting."
+msgstr ""
+"We offer hardware repair for computers and notebooks, including component "
+"replacement and troubleshooting."
 
 #: web_prueba_ingles/templates/Index.html:34
 msgid "index_card_2_title"
@@ -44,7 +94,9 @@ msgstr "Preventive Maintenance"
 
 #: web_prueba_ingles/templates/Index.html:36
 msgid "index_card_2_text"
-msgstr "We perform preventive maintenance to ensure optimal performance of your equipment, including internal cleaning, software updates and more."
+msgstr ""
+"We perform preventive maintenance to ensure optimal performance of your "
+"equipment, including internal cleaning, software updates and more."
 
 #: web_prueba_ingles/templates/Index.html:48
 msgid "index_card_3_title"
@@ -52,11 +104,16 @@ msgstr "Remote Assistance"
 
 #: web_prueba_ingles/templates/Index.html:49
 msgid "index_card_3_text"
-msgstr "We provide remote assistance for fast and convenient troubleshooting and technical support."
+msgstr ""
+"We provide remote assistance for fast and convenient troubleshooting and "
+"technical support."
 
 #: web_prueba_ingles/templates/Index.html:62
 msgid "index_promo"
-msgstr "If you want to contact us to schedule one of our services you must log in, if you don't have a FixMasters account, what are you waiting for to create one!"
+msgstr ""
+"If you want to contact us to schedule one of our services you must log in, "
+"if you don't have a FixMasters account, what are you waiting for to create "
+"one!"
 
 #: web_prueba_ingles/templates/base.html:43
 msgid "home"
@@ -82,42 +139,42 @@ msgstr "About us"
 msgid "contact"
 msgstr "Contact"
 
-#: web_prueba_ingles/templates/base.html:68
+#: web_prueba_ingles/templates/base.html:70
 msgid "welcome_user"
 msgstr "Welcome"
 
-#: web_prueba_ingles/templates/base.html:72
+#: web_prueba_ingles/templates/base.html:74
 msgid "settings"
 msgstr "Settings"
 
-#: web_prueba_ingles/templates/base.html:77
+#: web_prueba_ingles/templates/base.html:79
 msgid "log out"
 msgstr "Log out"
 
-#: web_prueba_ingles/templates/base.html:82
+#: web_prueba_ingles/templates/base.html:84
 msgid "sign up"
 msgstr "Sign up"
 
-#: web_prueba_ingles/templates/base.html:86
+#: web_prueba_ingles/templates/base.html:88
 msgid "log in"
 msgstr "Log in"
 
-#: web_prueba_ingles/templates/base.html:103
+#: web_prueba_ingles/templates/base.html:108
 msgid "footer_header"
 msgstr "Contact us"
 
-#: web_prueba_ingles/templates/base.html:106
+#: web_prueba_ingles/templates/base.html:111
 msgid "footer_title"
 msgstr "Contact information"
 
-#: web_prueba_ingles/templates/base.html:107
+#: web_prueba_ingles/templates/base.html:112
 msgid "footer_address"
 msgstr "Address"
 
-#: web_prueba_ingles/templates/base.html:108
+#: web_prueba_ingles/templates/base.html:113
 msgid "footer_phone"
 msgstr "Phone"
 
-#: web_prueba_ingles/templates/base.html:109
+#: web_prueba_ingles/templates/base.html:114
 msgid "footer_email"
 msgstr "Email"
