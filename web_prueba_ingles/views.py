@@ -12,7 +12,7 @@ from django.http import HttpResponseRedirect
 from django.conf import settings
 
 def index(request):
-    change_language(request,'en')
+    change_language(request,'es')
     return render(request, 'Index.html')
 
 

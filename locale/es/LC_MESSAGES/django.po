@@ -338,7 +338,7 @@ msgstr "Contacto"
 
 #: web_prueba_ingles/templates/base.html:71
 msgid "welcome_user"
-msgstr ""
+msgstr "Bienvenido"
 
 #: web_prueba_ingles/templates/base.html:75
 msgid "settings"
