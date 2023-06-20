@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
+{% load i18n %}   
 {% load static %}
-{% block content %}
-        
+{% block content %} 
     <!--Primera seccion del titulo de la pagina de inicio -->
     <section class="jumbotron text-center">
-        <h1 class="display-4" id="tituloColorBlanco">Reparación y Mantenimiento de Computadoras y Notebooks</h1>
+        <h1 class="display-4" id="tituloColorBlanco">{% trans "index_title" %}</h1>
         <br>
-        <p class="lead" id="subtituloPlateadoClaro">Servicios profesionales y confiables para solucionar problemas de
-            hardware.</p>
+        <p class="lead" id="subtituloPlateadoClaro">
+            {% trans "index_subtitle" %}
+        </p>
     </section>
     <!--Aqui se muestra el catalogo de los servicios impartidos con FixMasters-->
     <section class="services-section">
         <div class="container">
-            <h2 class="section-title text-center">Nuestros Servicios</h2>
+            <h2 class="section-title text-center">{% trans "index_services_title" %}</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title">Reparación de Hardware</h3>
-                            <p class="card-text">Ofrecemos reparación de hardware para computadoras y notebooks,
-                                incluyendo reemplazo de componentes y solución de problemas.
+                            <h3 class="card-title">{% trans "index_card_1_title" %}</h3>
+                            <p class="card-text">{% trans "index_card_1_text" %}
                             </p>
                             <div class="tarjeta">
                                 <img width="320px" height="200px" id="imagenReparacion" class="imagenRedonda"
@@ -31,9 +31,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title">Mantenimiento Preventivo</h3>
-                            <p class="card-text">Realizamos mantenimiento preventivo para garantizar el rendimiento
-                                óptimo de tu equipo, incluyendo limpieza interna, actualización de software y más.
+                            <h3 class="card-title">{% trans "index_card_2_title" %}</h3>
+                            <p class="card-text">
+                                {% trans "index_card_2_text" %}
                             </p>
                             <div class="tarjeta">
                                 <img width="320px" height="200px" id="imagenMantenimiento" class="imagenRedonda"
@@ -45,9 +45,8 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title">Asistencia Remota</h3>
-                            <p class="card-text">Brindamos asistencia remota para resolver problemas y ofrecer soporte
-                                técnico de manera rápida y conveniente.
+                            <h3 class="card-title">{% trans "index_card_3_title" %}</h3>
+                            <p class="card-text">{% trans "index_card_3_text" %}
                             </p>
                             <div class="tarjeta">
                                 <img width="320px" height="200px" id="imagenAsistencia" class="imagenRedonda"
@@ -60,9 +59,7 @@
         </div>
         <br>
         <section class="jumbotron text-center2">
-            <p class="lead" id="subtituloPlateadoClaroInvitacionACrear">Si quieres contactarte con nosotros para agendar
-                uno de nuestros servicios debes iniciar sesion, si no tienes una cuenta en "<b>FixMasters</b>" ¡que
-                esperas para crearla!</p>
+            <p class="lead" id="subtituloPlateadoClaroInvitacionACrear">{% trans "index_promo" %}</p>
         </section>
 
     </section>

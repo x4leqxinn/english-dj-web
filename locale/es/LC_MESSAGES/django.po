@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 02:40+0000\n"
+"POT-Creation-Date: 2023-06-20 03:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: web_prueba_ingles/templates/Index.html:7
+msgid "index_title"
+msgstr "Reparación y Mantenimiento de Computadoras y Notebooks"
+
+#: web_prueba_ingles/templates/Index.html:10
+msgid "index_subtitle"
+msgstr ""
+"Servicios profesionales y confiables para solucionar problemas de hardware."
+
+#: web_prueba_ingles/templates/Index.html:16
+msgid "index_services_title"
+msgstr "Nuestros Servicios"
+
+#: web_prueba_ingles/templates/Index.html:21
+msgid "index_card_1_title"
+msgstr "Reparación de Hardware"
+
+#: web_prueba_ingles/templates/Index.html:22
+msgid "index_card_1_text"
+msgstr "Ofrecemos reparación de hardware para computadoras y notebooks, incluyendo reemplazo de componentes y solución de problemas."
+
+#: web_prueba_ingles/templates/Index.html:34
+msgid "index_card_2_title"
+msgstr "Mantenimiento Preventivo"
+
+#: web_prueba_ingles/templates/Index.html:36
+msgid "index_card_2_text"
+msgstr "Realizamos mantenimiento preventivo para garantizar el rendimiento óptimo de tu equipo, incluyendo limpieza interna, actualización de software y más."
+
+#: web_prueba_ingles/templates/Index.html:48
+msgid "index_card_3_title"
+msgstr "Asistencia Remota"
+
+#: web_prueba_ingles/templates/Index.html:49
+msgid "index_card_3_text"
+msgstr "Brindamos asistencia remota para resolver problemas y ofrecer soporte técnico de manera rápida y conveniente."
+
+#: web_prueba_ingles/templates/Index.html:62
+msgid "index_promo"
+msgstr "Si quieres contactarte con nosotros para agendar uno de nuestros servicios debes iniciar sesion, si no tienes una cuenta en FixMasters ¡que esperas para crearla!"
 
 #: web_prueba_ingles/templates/base.html:43
 msgid "home"

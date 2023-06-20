@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 02:40+0000\n"
+"POT-Creation-Date: 2023-06-20 03:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: web_prueba_ingles/templates/Index.html:7
+msgid "index_title"
+msgstr "Computer and Notebook Repair & Maintenance"
+
+#: web_prueba_ingles/templates/Index.html:10
+msgid "index_subtitle"
+msgstr "Professional and reliable hardware troubleshooting services."
+
+#: web_prueba_ingles/templates/Index.html:16
+msgid "index_services_title"
+msgstr "Our services"
+
+#: web_prueba_ingles/templates/Index.html:21
+msgid "index_card_1_title"
+msgstr "Hardware repair"
+
+#: web_prueba_ingles/templates/Index.html:22
+msgid "index_card_1_text"
+msgstr "We offer hardware repair for computers and notebooks, including component replacement and troubleshooting."
+
+#: web_prueba_ingles/templates/Index.html:34
+msgid "index_card_2_title"
+msgstr "Preventive Maintenance"
+
+#: web_prueba_ingles/templates/Index.html:36
+msgid "index_card_2_text"
+msgstr "We perform preventive maintenance to ensure optimal performance of your equipment, including internal cleaning, software updates and more."
+
+#: web_prueba_ingles/templates/Index.html:48
+msgid "index_card_3_title"
+msgstr "Remote Assistance"
+
+#: web_prueba_ingles/templates/Index.html:49
+msgid "index_card_3_text"
+msgstr "We provide remote assistance for fast and convenient troubleshooting and technical support."
+
+#: web_prueba_ingles/templates/Index.html:62
+msgid "index_promo"
+msgstr "If you want to contact us to schedule one of our services you must log in, if you don't have a FixMasters account, what are you waiting for to create one!"
 
 #: web_prueba_ingles/templates/base.html:43
 msgid "home"
