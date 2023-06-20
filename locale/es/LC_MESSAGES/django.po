@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 03:57+0000\n"
+"POT-Creation-Date: 2023-06-20 04:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,3 +179,35 @@ msgstr "Teléfono"
 #: web_prueba_ingles/templates/base.html:114
 msgid "footer_email"
 msgstr "Correo electrónico"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:8
+msgid "login_title"
+msgstr "Iniciar sesión"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:13
+msgid "login_email_label"
+msgstr "Correo eléctronico"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:16
+msgid "login_email_placeholder"
+msgstr "Ingrese su correo eléctronico"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:19
+msgid "login_password_label"
+msgstr "Contraseña"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:22
+msgid "login_password_placeholder"
+msgstr "Ingrese su contraseña"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:25
+msgid "login_login_button"
+msgstr "Iniciar sesión"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:31
+msgid "login_not_account_label"
+msgstr "¿Aún no tienes cuenta?"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:31
+msgid "login_signup_button"
+msgstr "Crear cuenta"

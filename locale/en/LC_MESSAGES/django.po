@@ -178,3 +178,35 @@ msgstr "Phone"
 #: web_prueba_ingles/templates/base.html:114
 msgid "footer_email"
 msgstr "Email"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:8
+msgid "login_title"
+msgstr "Log in"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:13
+msgid "login_email_label"
+msgstr "Email"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:16
+msgid "login_email_placeholder"
+msgstr "Enter email"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:19
+msgid "login_password_label"
+msgstr "Password"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:22
+msgid "login_password_placeholder"
+msgstr "Enter password"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:25
+msgid "login_login_button"
+msgstr "Log in"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:31
+msgid "login_not_account_label"
+msgstr "You do not have an account?"
+
+#: web_prueba_ingles/templates/Iniciar Sesion.html:31
+msgid "login_signup_button"
+msgstr "Sign up"
