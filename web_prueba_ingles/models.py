@@ -32,6 +32,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='profile/',null=True,blank=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
@@ -40,7 +41,9 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.username
-
+    
+    class Meta:
+        verbose_name = 'Usuario'
 
 
 class Contact(models.Model):
@@ -51,4 +54,5 @@ class Contact(models.Model):
     def str(self):
         return self.name
 
-
+    class Meta:
+        verbose_name = 'Contacto'

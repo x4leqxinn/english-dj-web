@@ -149,3 +149,10 @@ AUTH_USER_MODEL = 'web_prueba_ingles.User'
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+
+# Define la URL base para los archivos de medios
+MEDIA_URL = '/media/'
+
+# Ruta del directorio donde se almacenarán los archivos de medios
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
