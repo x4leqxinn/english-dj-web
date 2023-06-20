@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 02:26+0000\n"
+"POT-Creation-Date: 2023-06-20 02:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: web_prueba_ingles/templates/base.html:43
 msgid "home"
 msgstr "Inicio"
@@ -60,3 +61,23 @@ msgstr "Registrarse"
 #: web_prueba_ingles/templates/base.html:86
 msgid "log in"
 msgstr "Iniciar sesión"
+
+#: web_prueba_ingles/templates/base.html:103
+msgid "footer_header"
+msgstr "Contáctanos"
+
+#: web_prueba_ingles/templates/base.html:106
+msgid "footer_title"
+msgstr "Información de contacto"
+
+#: web_prueba_ingles/templates/base.html:107
+msgid "footer_address"
+msgstr "Dirección"
+
+#: web_prueba_ingles/templates/base.html:108
+msgid "footer_phone"
+msgstr "Teléfono"
+
+#: web_prueba_ingles/templates/base.html:109
+msgid "footer_email"
+msgstr "Correo electrónico"
