@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %} 
 {% load static %}
 {% block content %}
 <div class="d-flex justify-content-center margenTop">
@@ -50,32 +51,9 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Poseemos un equipo de trabajo óptimo</h5>
-                                    <p class="card-text">En FixMasters, contamos con un equipo de técnicos altamente
-                                        capacitados y
-                                        certificados en
-                                        reparación
-                                        de hardware. Nuestro equipo está formado por profesionales apasionados y
-                                        dedicados que
-                                        poseen
-                                        una
-                                        amplia experiencia en la industria y un profundo conocimiento de los últimos
-                                        avances
-                                        tecnológicos.</p>
-                                    <p class="card-text"> Cada uno de nuestros técnicos posee habilidades
-                                        especializadas en
-                                        diferentes áreas, lo que nos
-                                        permite ofrecer una amplia gama de servicios de reparación, desde
-                                        computadoras y laptops
-                                        hasta
-                                        dispositivos móviles y otros dispositivos electrónicos. Nuestro equipo se
-                                        mantiene
-                                        actualizado
-                                        con
-                                        las últimas tendencias y avances en el campo de la reparación de hardware
-                                        para brindar
-                                        soluciones
-                                        confiables y eficientes.</p>
+                                    <h5 class="card-title">{% trans "works_card1_title" %}</h5>
+                                    <p class="card-text">{% trans "works_card1_desc_1" %}</p>
+                                    <p class="card-text"> {% trans "works_card1_desc_2" %}</p>
                                 </div>
                             </div>
                         </div>
@@ -93,33 +71,9 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Compromiso con la satisfacción del cliente</h5>
-                                    <p class="card-text">En FixMasters, la satisfacción del cliente es nuestra
-                                        máxima prioridad. Nos
-                                        esforzamos por
-                                        brindar un
-                                        excelente servicio al cliente en cada interacción y garantizar que cada
-                                        reparación cumpla
-                                        con
-                                        los
-                                        más altos estándares de calidad. Valoramos la confianza que nuestros
-                                        clientes depositan en
-                                        nosotros
-                                        y nos comprometemos a superar sus expectativas en términos de calidad,
-                                        tiempo de respuesta y
-                                        atención personalizada.</p>
-                                    <p class="card-text"> Creemos que la comunicación abierta, la transparencia y la
-                                        atención a los
-                                        detalles son
-                                        fundamentales
-                                        para lograr la satisfacción del cliente. Nos enorgullece ofrecer soluciones
-                                        personalizadas,
-                                        asesoramiento técnico experto y precios competitivos. Trabajamos en estrecha
-                                        colaboración
-                                        con
-                                        nuestros clientes para comprender sus necesidades y brindarles la mejor
-                                        experiencia posible.
-                                    </p>
+                                    <h5 class="card-title">{% trans "works_card2_title" %}</h5>
+                                    <p class="card-text">{% trans "works_card2_desc_1" %}</p>
+                                    <p class="card-text">{% trans "works_card2_desc_2" %}</p>
                                 </div>
                             </div>
                         </div>

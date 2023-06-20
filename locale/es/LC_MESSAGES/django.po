@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-20 04:23+0000\n"
+"POT-Creation-Date: 2023-06-20 05:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,61 @@ msgstr "¿ya tienes cuenta?"
 #: web_prueba_ingles/templates/Crear cuenta.html:48
 msgid "create_account_button_login"
 msgstr "Iniciar sesión"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:7
+msgid "location_title"
+msgstr "Ubicados en"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:24
+msgid "location_attention_title"
+msgstr "Horario de atención"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:25
+msgid "location_attention_desc"
+msgstr "Trabajamos de lunes a viernes, de 9:00 a.m. a 6:00 p.m."
+
+#: web_prueba_ingles/templates/Donde Estamos.html:30
+msgid "location_transport_title"
+msgstr "Accesibilidad y transporte"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:32
+msgid "location_transport_desc"
+msgstr ""
+"Nos encontramos cerca de la estación de metro Las mercedes y de varias "
+"paradas de autobús. Además, contamos con estacionamiento gratuito para "
+"nuestros clientes."
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:9
+msgid "contact_form_title"
+msgstr "Formulario de Contacto"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:13
+msgid "contact_form_name_label"
+msgstr "Nombre"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:14
+msgid "contact_form_name_placeholder"
+msgstr "Ingrese su nombre"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:18
+msgid "contact_form_email_label"
+msgstr "Correo eléctronico"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:20
+msgid "contact_form_email_placeholder"
+msgstr "Ingrese su correo eléctronico"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:25
+msgid "contact_form_message_label"
+msgstr "Mensaje"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:26
+msgid "contact_form_message_placeholder"
+msgstr "Cuentanos que servicio buscas para ti"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:30
+msgid "contact_form_send_message"
+msgstr "Enviar mensaje"
 
 #: web_prueba_ingles/templates/Index.html:7
 msgid "index_title"
@@ -148,6 +203,115 @@ msgstr "¿Aún no tienes cuenta?"
 msgid "login_signup_button"
 msgstr "Crear cuenta"
 
+#: web_prueba_ingles/templates/Quienes somos.html:8
+msgid "about_title"
+msgstr "Quiénes somos"
+
+#: web_prueba_ingles/templates/Quienes somos.html:16
+msgid "about_history_title"
+msgstr "Historia"
+
+#: web_prueba_ingles/templates/Quienes somos.html:18
+msgid "about_history_text_1"
+msgstr ""
+"FixMasters fue fundada en el año 1969 por Ricardo Milos, con la visión de "
+"proporcionar servicios de reparación de hardware confiables y de alta "
+"calidad para satisfacer las necesidades crecientes del mercado. Desde sus "
+"humildes comienzos como una pequeña tienda de reparación de computadoras, "
+"FixMasters ha experimentado un crecimiento significativo a lo largo de los "
+"años."
+
+#: web_prueba_ingles/templates/Quienes somos.html:21
+msgid "about_history_text_2"
+msgstr ""
+"Gracias a nuestra dedicación inquebrantable a la excelencia y nuestro "
+"enfoque en la satisfacción del cliente, hemos logrado construir una sólida "
+"reputación en la industria de la reparación de hardware. Nuestro compromiso "
+"con la calidad y el servicio excepcional nos ha permitido expandir nuestras "
+"operaciones y convertirnos en líderes del mercado en el sector de servicios "
+"de reparación."
+
+#: web_prueba_ingles/templates/Quienes somos.html:30
+msgid "about_vision_title"
+msgstr "Visión"
+
+#: web_prueba_ingles/templates/Quienes somos.html:32
+msgid "about_vision_text"
+msgstr ""
+"Nuestra visión es convertirnos en el proveedor líder de servicios de "
+"reparación de hardware a nivel nacional, reconocidos por nuestra calidad, "
+"confiabilidad y atención al cliente. Buscamos ser la opción preferida de "
+"individuos y empresas cuando se trata de soluciones confiables y eficientes "
+"para sus necesidades de reparación de hardware."
+
+#: web_prueba_ingles/templates/Quienes somos.html:41
+msgid "about_mission_title"
+msgstr "Misión"
+
+#: web_prueba_ingles/templates/Quienes somos.html:43
+msgid "about_mission_text_1"
+msgstr ""
+"En FixMasters, nuestra misión es ofrecer servicios de reparación de hardware "
+"de alta calidad, brindando soluciones confiables y eficientes para las "
+"necesidades de nuestros clientes. Nos comprometemos a utilizar equipos de "
+"última generación, técnicas avanzadas y un equipo de expertos altamente "
+"capacitados para garantizar la satisfacción del cliente en cada interacción."
+
+#: web_prueba_ingles/templates/Quienes somos.html:46
+msgid "about_mission_text_2"
+msgstr ""
+"Además, nos esforzamos por establecer relaciones duraderas con nuestros "
+"clientes, basadas en la confianza, la transparencia y la calidad del "
+"servicio. Nuestro objetivo es superar las expectativas de nuestros clientes "
+"y brindarles la tranquilidad de saber que sus dispositivos electrónicos "
+"están en manos expertas."
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:54
+msgid "works_card1_title"
+msgstr "Poseemos un equipo de trabajo óptimo"
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:55
+msgid "works_card1_desc_1"
+msgstr ""
+"En FixMasters, contamos con un equipo de técnicos altamente capacitados y "
+"certificados en reparación de hardware. Nuestro equipo está formado por "
+"profesionales apasionados y dedicados que poseen una amplia experiencia en "
+"la industria y un profundo conocimiento de los últimos avances tecnológicos."
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:56
+msgid "works_card1_desc_2"
+msgstr ""
+"Cada uno de nuestros técnicos posee habilidades especializadas en diferentes "
+"áreas, lo que nos permite ofrecer una amplia gama de servicios de "
+"reparación, desde computadoras y laptops hasta dispositivos móviles y otros "
+"dispositivos electrónicos. Nuestro equipo se mantiene actualizado con las "
+"últimas tendencias y avances en el campo de la reparación de hardware para "
+"brindar soluciones confiables y eficientes."
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:74
+msgid "works_card2_title"
+msgstr "Compromiso con la satisfacción del cliente"
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:75
+msgid "works_card2_desc_1"
+msgstr ""
+"En FixMasters, la satisfacción del cliente es nuestra máxima prioridad. Nos "
+"esforzamos por brindar un excelente servicio al cliente en cada interacción "
+"y garantizar que cada reparación cumpla con los más altos estándares de "
+"calidad. Valoramos la confianza que nuestros clientes depositan en nosotros "
+"y nos comprometemos a superar sus expectativas en términos de calidad, "
+"tiempo de respuesta y atención personalizada."
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:76
+msgid "works_card2_desc_2"
+msgstr ""
+"Creemos que la comunicación abierta, la transparencia y la atención a los "
+"detalles son fundamentales para lograr la satisfacción del cliente. Nos "
+"enorgullece ofrecer soluciones personalizadas, asesoramiento técnico experto "
+"y precios competitivos. Trabajamos en estrecha colaboración con nuestros "
+"clientes para comprender sus necesidades y brindarles la mejor experiencia "
+"posible."
+
 #: web_prueba_ingles/templates/base.html:43
 msgid "home"
 msgstr "Inicio"
@@ -212,38 +376,22 @@ msgstr "Teléfono"
 msgid "footer_email"
 msgstr "Correo electrónico"
 
-#: web_prueba_ingles/templates/Quienes somos.html:8
-msgid "about_title"
-msgstr "Quiénes somos"
+#: web_prueba_ingles/templates/Usuario.html:7
+msgid "user_title"
+msgstr "Perfil de usuario"
 
-#: web_prueba_ingles/templates/Quienes somos.html:16
-msgid "about_history_title"
-msgstr "Historia"
+#: web_prueba_ingles/templates/Usuario.html:17
+msgid "user_username_label"
+msgstr "Nombre de usuario"
 
-#: web_prueba_ingles/templates/Quienes somos.html:18
-msgid "about_history_text_1"
-msgstr "FixMasters fue fundada en el año 1969 por Ricardo Milos, con la visión de proporcionar servicios de reparación de hardware confiables y de alta calidad para satisfacer las necesidades crecientes del mercado. Desde sus humildes comienzos como una pequeña tienda de reparación de computadoras, FixMasters ha experimentado un crecimiento significativo a lo largo de los años."
+#: web_prueba_ingles/templates/Usuario.html:20
+msgid "user_button_change"
+msgstr "Cambiar"
 
-#: web_prueba_ingles/templates/Quienes somos.html:26
-msgid "about_history_text_2"
-msgstr "Gracias a nuestra dedicación inquebrantable a la excelencia y nuestro enfoque en la satisfacción del cliente, hemos logrado construir una sólida reputación en la industria de la reparación de hardware. Nuestro compromiso con la calidad y el servicio excepcional nos ha permitido expandir nuestras operaciones y convertirnos en líderes del mercado en el sector de servicios de reparación."
+#: web_prueba_ingles/templates/Usuario.html:25
+msgid "user_email_label"
+msgstr "Correo eléctronico"
 
-#: web_prueba_ingles/templates/Quienes somos.html:40
-msgid "about_vision_title"
-msgstr "Visión"
-
-#: web_prueba_ingles/templates/Quienes somos.html:42
-msgid "about_vision_text"
-msgstr "Nuestra visión es convertirnos en el proveedor líder de servicios de reparación de hardware a nivel nacional, reconocidos por nuestra calidad, confiabilidad y atención al cliente. Buscamos ser la opción preferida de individuos y empresas cuando se trata de soluciones confiables y eficientes para sus necesidades de reparación de hardware."
-
-#: web_prueba_ingles/templates/Quienes somos.html:56
-msgid "about_mission_title"
-msgstr "Misión"
-
-#: web_prueba_ingles/templates/Quienes somos.html:58
-msgid "about_mission_text_1"
-msgstr "En FixMasters, nuestra misión es ofrecer servicios de reparación de hardware de alta calidad, brindando soluciones confiables y eficientes para las necesidades de nuestros clientes. Nos comprometemos a utilizar equipos de última generación, técnicas avanzadas y un equipo de expertos altamente capacitados para garantizar la satisfacción del cliente en cada interacción."
-
-#: web_prueba_ingles/templates/Quienes somos.html:68
-msgid "about_mission_text_2"
-msgstr "Además, nos esforzamos por establecer relaciones duraderas con nuestros clientes, basadas en la confianza, la transparencia y la calidad del servicio. Nuestro objetivo es superar las expectativas de nuestros clientes y brindarles la tranquilidad de saber que sus dispositivos electrónicos están en manos expertas."
+#: web_prueba_ingles/templates/Usuario.html:31
+msgid "user_password_label"
+msgstr "Contraseña"

@@ -246,3 +246,100 @@ msgstr "Here at FixMasters, our mission is to offer high quality hardware repair
 #: web_prueba_ingles/templates/Quienes somos.html:68
 msgid "about_mission_text_2"
 msgstr "Also, we strive to establish long-lasting relationships with our customers, based on trust, transparency and quality of service. Our goal is to exceed our customers' expectations and provide them with peace of mind knowing that their electronic devices are in expert hands."
+
+#: web_prueba_ingles/templates/Donde Estamos.html:7
+msgid "location_title"
+msgstr "Located in"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:24
+msgid "location_attention_title"
+msgstr "Opening hours"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:25
+msgid "location_attention_desc"
+msgstr "We work from monday to friday, from 9:00 am to 6:00 pm"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:30
+msgid "location_transport_title"
+msgstr "Accessibility and transport"
+
+#: web_prueba_ingles/templates/Donde Estamos.html:32
+msgid "location_transport_desc"
+msgstr "We are located close to the metro station Las mercedes and several bus stops. We also have free parking for our guests."
+
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:54
+msgid "works_card1_title"
+msgstr "We have an optimal work team"
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:55
+msgid "works_card1_desc_1"
+msgstr "At FixMasters, we have a team of highly trained and certified hardware repair technicians. Our team consists of passionate and dedicated professionals who possess extensive industry experience and a deep understanding of the latest technologies."
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:56
+msgid "works_card1_desc_2"
+msgstr "Each of our technicians possess specialized skills in different areas, allowing us to offer a wide range of repair services, from computers and laptops to mobile devices and other electronic devices. Our team keeps up to date with the latest trends and advances in the field of hardware repair to provide reliable and efficient solutions."
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:74
+msgid "works_card2_title"
+msgstr "Commitment to customer satisfaction"
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:75
+msgid "works_card2_desc_1"
+msgstr "At FixMasters, customer satisfaction is our top priority. We strive to provide excellent customer service in every interaction to ensure that every repair meets the highest quality standards. We value the trust placed on us by costumers and are committed to exceeding their expectations in terms of quality, response time and personalized attention."
+
+#: web_prueba_ingles/templates/Trabajos realizados.html:76
+msgid "works_card2_desc_2"
+msgstr "We believe that open communication, transparency and attention to detail are critical to achieving customer satisfaction. We pride ourselves on offering customized solutions, expert technical advice and competitive pricing. We work closely with our customers to understand their needs and provide them with the best possible experience."
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:9
+msgid "contact_form_title"
+msgstr "Contact form"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:13
+msgid "contact_form_name_label"
+msgstr "Name"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:14
+msgid "contact_form_name_placeholder"
+msgstr "Enter name"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:18
+msgid "contact_form_email_label"
+msgstr "Email"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:20
+msgid "contact_form_email_placeholder"
+msgstr "Enter email"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:25
+msgid "contact_form_message_label"
+msgstr "Message"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:26
+msgid "contact_form_message_placeholder"
+msgstr "Tell us what services you are looking for"
+
+#: web_prueba_ingles/templates/Formulario de contacto.html:30
+msgid "contact_form_send_message"
+msgstr "Send message"
+
+#: web_prueba_ingles/templates/Usuario.html:7
+msgid "user_title"
+msgstr "User profile"
+
+#: web_prueba_ingles/templates/Usuario.html:17
+msgid "user_username_label"
+msgstr "Username"
+
+#: web_prueba_ingles/templates/Usuario.html:20
+msgid "user_button_change"
+msgstr "Change"
+
+#: web_prueba_ingles/templates/Usuario.html:25
+msgid "user_email_label"
+msgstr "Email"
+
+#: web_prueba_ingles/templates/Usuario.html:31
+msgid "user_password_label"
+msgstr "Password"
