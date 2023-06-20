@@ -9,6 +9,7 @@ from django.contrib.auth import authenticate,logout,login
 from django.contrib.auth.decorators import login_required, permission_required
 
 def index(request):
+    change_language(request,'en')
     return render(request, 'Index.html')
 
 
@@ -90,3 +91,15 @@ def iniciar_sesion(request):
 def cerrar_sesion(request):
     logout(request)
     return redirect(to='index')
+
+
+from django.utils import translation
+from django.http import HttpResponseRedirect
+from django.conf import settings
+
+def change_language(request, language_code):
+    translation.activate(language_code)
+    request.session['django_language'] = language_code
+    response = HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language_code)
+    return response
